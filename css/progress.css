@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    /* margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh; */
+} 
+
+.progress-container {
+    max-width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 40px;
+    background-color: #007bff;
+    transition: width 0.3s;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+  }
+  
