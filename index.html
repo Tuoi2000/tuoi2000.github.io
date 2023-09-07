@@ -2,20 +2,36 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="css/digital_clock.css">
-  <link rel="stylesheet" href="css/progress.css">
+  <link rel="stylesheet" href="css/clock.css">
 </head>
 <body>
-<div id="digital-clock"></div>
-<br>
-<br>
-<div class="progress-container">
-  <div class="progress-bar" id="progress-bar"></div>
-  <div class="progress-label" id="progress-label"></div>
+
+<div class="clock">
+    <div class="numbers">
+        <div class="circle" id="sec" style="--clr:#04fc43;"><i></i></div>
+        <div class="circle" id="min" style="--clr:#fee800;"><i></i></div>
+        <div class="circle" id="hrs" style="--clr:#ff2972;"><i></i></div>
+        <span style="--i:0;"><b>12</b></span>
+        <span style="--i:1;"><b>1</b></span>
+        <span style="--i:2;"><b>2</b></span>
+        <span style="--i:3;"><b>3</b></span>
+        <span style="--i:4;"><b>4</b></span>
+        <span style="--i:5;"><b>5</b></span>
+        <span style="--i:6;"><b>6</b></span>
+        <span style="--i:7;"><b>7</b></span>
+        <span style="--i:8;"><b>8</b></span>
+        <span style="--i:9;"><b>9</b></span>
+        <span style="--i:10;"><b>10</b></span>
+        <span style="--i:11;"><b>11</b></span>
+    </div>
+    <div id="time">
+        <div id="hour" style="--clr:#ff2972;">00</div>
+        <div id="minute" style="--clr:#fee800;">00</div>
+        <div id="second" style="--clr:#04fc43;">00</div>
+        <div id="period" style="--clr:#fff;">AM</div>
+    </div>
 </div>
 
-<script src="js/progress.js "></script>
-<script src="js/digital_clock.js "></script>
+<script src="js/clock.js "></script>
 </body>
 </html>
